@@ -161,8 +161,7 @@ with tempfile.TemporaryDirectory() as temp_dir:
         shutil.move(temp_filename, final_path)
         print(f"DataFrame saved as {next_filename}")
         print("Time:", datetime.datetime.now().time())
+        evo_converter.convert_evo_to_json()
     else:
         print("Duplicate DataFrame. Not saved.")
         print("Time:", datetime.datetime.now().time())
-        
-evo_converter.convert_evo_to_json()
