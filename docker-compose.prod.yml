@@ -6,7 +6,7 @@ services:
       - ./cat_evolution.json:/app/cat_evolution.json
       - ./layer_map.txt:/app/layer_map.txt
     ports:
-      - "80:5000"
+      - "8080:5000"
     environment:
       - PYTHONUNBUFFERED=1
     restart: always
