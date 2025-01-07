@@ -1,10 +1,12 @@
 from flask import Flask, send_file, jsonify
+from flask_cors import CORS
 import os
 from apscheduler.schedulers.background import BackgroundScheduler
 import subprocess
 import logging
 
 app = Flask(__name__)
+CORS(app)
 
 # Set up logging
 logging.basicConfig(level=logging.INFO)
