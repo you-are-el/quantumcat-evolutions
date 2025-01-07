@@ -15,7 +15,7 @@ PUBLIC_API_ENDPOINT = 'https://mempool.space/api/'
 # This should be set to another third-party hosted Mempool API.
 # Example: 'https://mempool.bullbitcoin.com/api/'
 # Note: Ensure that the fallback API has a similar response format to the primary API.
-FALLBACK_API_ENDPOINT = 'https://mempool.bullbitcoin.com/api/'  # Replace with another Mempool API if preferred
+FALLBACK_API_ENDPOINT = 'https://taprootwizards.mempool.space/docs/api/'  # Replace with another Mempool API if preferred
 
 # Configuration for Local Bitcoin Node
 # ====================================
