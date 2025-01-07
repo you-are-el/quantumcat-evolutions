@@ -20,7 +20,7 @@ def run_evolution_script():
 
 # Initialize scheduler
 scheduler = BackgroundScheduler()
-scheduler.add_job(func=run_evolution_script, trigger="interval", minutes=5)
+scheduler.add_job(func=run_evolution_script, trigger="interval", minutes=9)
 scheduler.start()
 
 @app.route('/cat_evolution.json')
