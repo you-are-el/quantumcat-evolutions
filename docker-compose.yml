@@ -1,0 +1,12 @@
+services:
+  webserver:
+    build: .
+    volumes:
+      - ./evolutions:/app/evolutions
+      - ./cat_evolution.json:/app/cat_evolution.json
+      - ./layer_map.txt:/app/layer_map.txt
+    ports:
+      - "5001:5000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped 
